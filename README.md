@@ -58,7 +58,7 @@ I started  by logging into DC-1 and installing Active Directory Domain Services.
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/MTPeRJ5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Log into Client-1 as mydomain.com\jane_admin
