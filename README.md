@@ -50,7 +50,7 @@ Moreover, I created the Client VM (Windows 10) named “Client-1” and then, at
 <img src="https://i.imgur.com/1CkmlaY.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I started  by logging into DC-1 and installing Active Directory Domain Services. Next, I configured the active directory to become a domain controller, after a new forest was set as mydomain.com, I restarted and then logged back into DC-1 as a user. Furthermore, in Active Directory Users and Computers (ADUC), I created an Organizational Unit (OU) called “_EMPLOYEES” then after, I Created another new OU named “_ADMINS”. Next, I created a new employee named “Jane Doe” with the username of “jane_admin” / Cyberlab123! as the password, then I added jane_admin to the “Domain Admins” Security Group, then I logged out which closed the connection to DC-1, and logged back in as “mydomain.com\jane_admin”. The user jane_admin is my admin account from now on. Moreover, I logged into the domain controller and verified if Client-1 showed up in ADUC, then I created a new OU named “_CLIENTS” and dragged Client-1 into it as shown in the image above.
+I started  by logging into DC-1 and installing Active Directory Domain Services. Next, I configured the active directory to become a domain controller, after a new forest was set as mydomain.com, I restarted and logged back into DC-1 as a user. Furthermore, in Active Directory Users and Computers (ADUC), I created an Organizational Unit (OU) called “_EMPLOYEES” then after, I Created another new OU named “_ADMINS”. Next, I made a new employee named “Jane Doe” with the username of “jane_admin” / Cyberlab123! as the password, then I added jane_admin to the “Domain Admins” Security Group, then I logged out which closed the connection to DC-1, and logged back in as “mydomain.com\jane_admin”. From now on, the user jane_admin will be my admin account. Moreover, I logged into the domain controller and verified if Client-1 showed up in ADUC, then I created a new OU named “_CLIENTS” and dragged Client-1 into it as shown in the image above.
 
 
 
@@ -61,7 +61,13 @@ I started  by logging into DC-1 and installing Active Directory Domain Services.
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Log into Client-1 as mydomain.com\jane_admin
+Open system properties
+Click “Remote Desktop”
+Allow “domain users” access to remote desktop
+You can now log into Client-1 as a normal, non-administrative user now
+Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
+
 </p>
 <br />
 
