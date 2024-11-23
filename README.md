@@ -61,21 +61,16 @@ I started  by logging into DC-1 and installing Active Directory Domain Services.
 <img src="https://i.imgur.com/MTPeRJ5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Log into Client-1 as mydomain.com\jane_admin
-Open system properties
-Click “Remote Desktop”
-Allow “domain users” access to remote desktop
-You can now log into Client-1 as a normal, non-administrative user now
-Normally you’d want to do this with Group Policy that allows you to change MANY systems at once (maybe a future lab)
+I began by logging into Client-1 as mydomain.com\jane_admin opened system properties clicked on “Remote Desktop” and then again clicked on allow “domain users” access to remote desktop. Moreover, I can now log into Client-1 as a normal, non-administrative user as shown in the image above. Normally this would be done with a Group Policy that allows you to change many systems at once, this was done already in a future lab.
 
 </p>
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/ebArncr.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I moved on to create a bunch of additional users and attempted to log into client-1 with one of the users. I started this step by logging in to DC-1 as jane_admin then opened PowerShell_ise as an administrator I created a new file and pasted the contents of the script into it then Ranned the script and observed the accounts being created, when that process was finished, I opened ADUC and observe the accounts in the appropriate Organizational Unit (OU) under the name "_EMPLOYEES". Lastly, I attempted to log into Client-1 with one of the accounts and It was successful an example is shown in the image above.
 </p>
 <br />
 
