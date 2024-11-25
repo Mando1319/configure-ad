@@ -61,7 +61,7 @@ I started  by logging into DC-1 and installing Active Directory Domain Services.
 <img src="https://i.imgur.com/MTPeRJ5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-I began by logging into Client-1 as mydomain.com\jane_admin opened system properties clicked on “Remote Desktop” and then again clicked on allow “domain users” access to remote desktop. Moreover, I can now log into Client-1 as a normal, non-administrative user as shown in the image above. Normally this would be done with a Group Policy that allows you to change many systems at once, this was done already in a future lab.
+I began by logging into Client-1 as mydomain.com\jane_admin opened system properties, clicked on “Remote Desktop,” and then clicked on "Allow domain users to access the remote desktop." Moreover, as shown in the image above, I can now log into Client-1 as a normal, non-administrative user. Normally, this would be done with a Group Policy that allows you to change many systems at once.'[[[[
 
 </p>
 <br />
@@ -75,9 +75,11 @@ I moved on to create a bunch of additional users and attempted to log into clien
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/JiG1rCd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Moving forward in this section of the lab I am now going to explain how I dealt with a locked account. I started by logging into dc-1 and picking a random user account that I created previously in my earlier explanations, then I attempted to log in with it 10 times with a bad password to get the user account locked out. Next, I configured the Group Policy to lock out the account after 5 attempts, then attempted again to log in with it 6 times with a bad password. Furthermore, I observed that the account had been locked out within Active Directory as shown in the screenshot above, then I proceeded to unlock the account and attempted to log in which was a success.
+
+
 </p>
 <br />
