@@ -83,3 +83,24 @@ Moving forward in this section of the lab I am now going to explain how I dealt 
 
 </p>
 <br />
+
+<p>
+<img src="https://i.imgur.com/1zW7hEo.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Moving further this section I am demonstrating how I enabled and disabled an account, I started by disabling the bag.mur user account in Active Directory and attempted to login with it, and observed the error message as the account appeared to be disabled. I then re-enabled the account and attempted to login with it and it was a success. Furthermore, I observed the logs using Event Viewer and signing in as an administrator, and observed how I failed to log in because the user account I was trying to login with earlier was disabled then it showed that I was able to log in after enabling the account, as shown in the example screenshot above.
+
+
+
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/JiG1rCd.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Moving forward in this section of the lab I am now going to explain how I dealt with a locked account. I started by logging into dc-1 and picking a random user account that I created previously in my earlier explanations, then I attempted to log in with it 10 times with a bad password to get the user account locked out. Next, I configured the Group Policy to lock out the account after 5 attempts, then attempted again to log in with it 6 times with a bad password. Furthermore, I observed that the account had been locked out within Active Directory as shown in the screenshot above, then I proceeded to unlock the account and attempted to log in which was a success.
+
+
+</p>
+<br />
